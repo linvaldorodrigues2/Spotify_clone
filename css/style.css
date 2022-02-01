@@ -1,10 +1,63 @@
-html, body{
-    height: 100%;
-    overflow-x: hidden;
+html,
+body,
+#home {
+  height: 100%;
+  overflow-x: hidden;
 }
+body {
+  background: url(../img/capa.png), url(../img/ruido.png),
+    linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font: Arial, Helvetica, sans-serif;
+}
+
+/*Formatação geral*/
+h1 {
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+  color: #fff;
+}
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 /*Navegação*/
-.divisor{
-    width: 1px;
-    margin: 12px 15px;
-    background: #fff;
+.divisor {
+  width: 1px;
+  margin: 12px 15px;
+  background: #fff;
+}
+
+/*home*/
+.btn-custom {
+  color: #fff;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color0.4s;
+  padding: 10px 20px;
+}
+.btn-purple {
+  background: #7c25f8;
+}
+.btn-purple:hover {
+  background: #6207e3;
+  color: #fff;
+}
+.btn-white {
+  border: 1px solid #fff;
+}
+.btn-white:hover {
+  background: #fff;
+  color: #000;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 30%;
 }
